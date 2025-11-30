@@ -2,7 +2,7 @@ import { GoogleGenAI } from "@google/genai";
 
 // Initialize Gemini API
 // Note: Ensure API_KEY is set in your environment variables (e.g. Vercel Project Settings)
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: import.meta.env.VITE_API_KEY });
 
 export const generateTutorResponse = async (question: string, subject: string): Promise<string> => {
   try {
