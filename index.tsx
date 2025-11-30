@@ -1,5 +1,6 @@
-import React, { Component, ReactNode, ErrorInfo } from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import { IconName } from "lucide-react";
 import App from './App';
 
 interface ErrorBoundaryProps {
